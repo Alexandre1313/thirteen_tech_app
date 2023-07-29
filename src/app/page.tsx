@@ -1,7 +1,9 @@
-export default function Home() {
+import SectionHeader from "@/components/SectionHeader";
+
+const Home = () => {
     return (
-       <div>
-       
-       </div>
+       <SectionHeader/>
     );
 }
+
+export default Home;
