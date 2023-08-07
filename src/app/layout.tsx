@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import Header from "../components/Header";
-import "./globals.css";
+
+import "../styles/globals.css";
+import HeaderBarDefault from "@/components/HeaderBarDefault";
 
 const montserrat = Montserrat({
     subsets: ["latin"],
@@ -10,18 +11,14 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
     title: "Thirteen Tech",
-    description: "Tecnologia",
+    description: "Tecnologia, por dentro das mais atualizadas tecnologias de desenvolvimento web",
 };
 
-export default function RootLayout({
-    children,
-}: {
-    children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="pt-br">
+        <html lang="pt-br">            
             <body className={montserrat.className}>
-                <Header />
+                <HeaderBarDefault/>
                 {children}
             </body>
         </html>

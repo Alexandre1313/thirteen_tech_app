@@ -74,4 +74,3 @@ const links = [
   }
   
   export default SectionHeader
-  

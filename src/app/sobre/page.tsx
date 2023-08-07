@@ -1,7 +1,9 @@
-const Sobre = () => {
+const About = () => {
     return (
-        <div></div>
-    )
-}
+        <div className={`bg-red-400 h-screen`}>
 
-export default Sobre;
+        </div>
+    );
+};
+
+export default About;
